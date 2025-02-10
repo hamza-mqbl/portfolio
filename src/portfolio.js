@@ -150,6 +150,7 @@ const educationInfo = {
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
+
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -179,29 +180,29 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Mern Stack Developer",
+      company: "Olumni Tech",
+      companylogo: require("./assets/images/olumitech.jpeg"),
+      date: "Jan 2024 – Present",
+      desc: "At Olumni Tech, I integrated React.js with Node.js APIs, optimized performance with code splitting, and reduced load times by 20%. I built scalable RESTful APIs and responsive UI components, ensuring seamless UX and cross-browser compatibility.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
       role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      company: "Next-home",
+      companylogo: require("./assets/images/nexthom.jpeg"),
       date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Optimized performance (15% faster queries), built scalable React.js components with secure APIs, enhanced UI with Redux Toolkit, and streamlined deployment using Docker and Git."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "React Internship",
+      company: "Pixii Solutions",
+      companylogo: require("./assets/images/pixi.jpeg"),
+      date: "Jan 2022 – Apr 2022",
+      desc: "During this time, i gain practical experience in developing web applications using React.js. I work on various tasks assigned to me. Such as building user interfaces and optimizing application performance."
     }
   ]
 };
