@@ -222,9 +222,9 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/multivendor.png"),
       projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: "Developed a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance using Redux Toolkit. ",
       footerLink: [
         {
           name: "Visit Website",
@@ -234,7 +234,30 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/multivendor.png"),
+      projectName: "Saayahealth",
+      projectDesc: "Developed a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance using Redux Toolkit. ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    }, {
+      image: require("./assets/images/multivendor.png"),
+      projectName: "Saayahealth",
+      projectDesc: "Developed a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance using Redux Toolkit. ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/blog.png"),
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
