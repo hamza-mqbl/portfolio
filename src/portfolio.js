@@ -222,48 +222,48 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/multivendor.png"),
-      projectName: "Saayahealth",
-      projectDesc: "Developed a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance using Redux Toolkit. ",
+      image: require("./assets/images/leventCusine.png"),
+      projectName: "Levante Cuisine",
+      projectDesc: "Built a multi-restaurant platform with real-time menus, secure payments, and a 30% faster response time.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://levantecuisine.co.uk/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/multivendor.png"),
-      projectName: "Saayahealth",
-      projectDesc: "Developed a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance using Redux Toolkit. ",
+      projectName: "VendorHub",
+      projectDesc: "Built a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance with Redux Toolkit. ",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://e-shop-frontend-six.vercel.app/"
         }
         //  you can add extra buttons here.
       ]
     }, {
-      image: require("./assets/images/multivendor.png"),
-      projectName: "Saayahealth",
-      projectDesc: "Developed a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance using Redux Toolkit. ",
+      image: require("./assets/images/blogmern.png"),
+      projectName: "StackGuide",
+      projectDesc: "Built a MERN-based tech blog platform with integration guides and modern development insights. ",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://mern-blog-3vqj.onrender.com/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/blog.png"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/hobanke.png"),
+      projectName: "HooBank",
+      projectDesc: "An informative bank website for users who enjoy to use banking service through website.Built using HTML, CSS & JAVASCRIPT. ",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://react-hoobank-app.netlify.app/"
         }
       ]
     }
