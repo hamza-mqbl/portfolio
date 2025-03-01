@@ -48,7 +48,8 @@ export default function StartupProject() {
                   </div>
                 )}
                 <div className="project-detail">
-                  <h5 style={{paddingTop:"1rem"}}
+                  <h5
+                    style={{margin: "0rem"}}
                     className={isDark ? "dark-mode card-title" : "card-title"}
                   >
                     {project.projectName}
@@ -64,6 +65,7 @@ export default function StartupProject() {
                     <div className="project-card-footer">
                       {project.footerLink.map((link, i) => (
                         <span
+                        // style={{display:"flex", justifyContent:"center",alignItems:"center",}}
                           key={i}
                           className={
                             isDark ? "dark-mode project-tag" : "project-tag"

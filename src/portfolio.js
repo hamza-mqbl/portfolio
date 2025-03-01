@@ -55,9 +55,7 @@ const skillsSection = {
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS "
-    )
+    emoji("⚡ Integration of third party services such as Firebase/ AWS ")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -108,19 +106,18 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     },
-    { 
-      skillName: "next.js", 
-      fontAwesomeClassname: "fab fa-react" 
-    }, 
-    { 
-      skillName: "material-ui", 
-      fontAwesomeClassname: "fas fa-palette" 
-    }, 
-    { 
-      skillName: "shadcn-ui", 
-      fontAwesomeClassname: "fas fa-layer-group" 
+    {
+      skillName: "next.js",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "material-ui",
+      fontAwesomeClassname: "fas fa-palette"
+    },
+    {
+      skillName: "shadcn-ui",
+      fontAwesomeClassname: "fas fa-layer-group"
     }
-    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -135,7 +132,7 @@ const educationInfo = {
       logo: require("./assets/images/UOE.png"),
       subHeader: "Bachelor in Information Technology",
       duration: "September 2021 -  2025",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems"
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -146,11 +143,10 @@ const educationInfo = {
       logo: require("./assets/images/pgc.png"),
       subHeader: "Intermediate in Computer Science",
       duration: "September 2019 - April 2021",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, c++, ...",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, c++, ..."
       // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
-
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -184,7 +180,7 @@ const workExperiences = {
       company: "Olumni Tech",
       companylogo: require("./assets/images/olumitech.jpeg"),
       date: "Jan 2024 – Present",
-      desc: "At Olumni Tech, I integrated React.js with Node.js APIs, optimized performance with code splitting, and reduced load times by 20%. I built scalable RESTful APIs and responsive UI components, ensuring seamless UX and cross-browser compatibility.",
+      desc: "At Olumni Tech, I integrated React.js with Node.js APIs, optimized performance with code splitting, and reduced load times by 20%. I built scalable RESTful APIs and responsive UI components, ensuring seamless UX and cross-browser compatibility."
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -194,14 +190,14 @@ const workExperiences = {
       role: "Front-End Developer",
       company: "Next-home",
       companylogo: require("./assets/images/nexthom.jpeg"),
-      date: "May 2017 – May 2018",
+      date: "April 2023 – jan 2024",
       desc: "Optimized performance (15% faster queries), built scalable React.js components with secure APIs, enhanced UI with Redux Toolkit, and streamlined deployment using Docker and Git."
     },
     {
       role: "React Internship",
       company: "Pixii Solutions",
       companylogo: require("./assets/images/pixi.jpeg"),
-      date: "Jan 2022 – Apr 2022",
+      date: "Jan 2023 – June 2023",
       desc: "During this time, i gain practical experience in developing web applications using React.js. I work on various tasks assigned to me. Such as building user interfaces and optimizing application performance."
     }
   ]
@@ -224,7 +220,8 @@ const bigProjects = {
     {
       image: require("./assets/images/leventCusine.png"),
       projectName: "Levante Cuisine",
-      projectDesc: "Built a multi-restaurant platform with real-time menus, secure payments, and a 30% faster response time.",
+      projectDesc:
+        "Built a multi-restaurant platform with real-time menus, secure payments, and a 30% faster response time.",
       footerLink: [
         {
           name: "Visit Website",
@@ -236,7 +233,8 @@ const bigProjects = {
     {
       image: require("./assets/images/multivendor.png"),
       projectName: "VendorHub",
-      projectDesc: "Built a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance with Redux Toolkit. ",
+      projectDesc:
+        "Built a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance with Redux Toolkit. ",
       footerLink: [
         {
           name: "Visit Website",
@@ -244,10 +242,12 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    }, {
+    },
+    {
       image: require("./assets/images/blogmern.png"),
       projectName: "StackGuide",
-      projectDesc: "Built a MERN-based tech blog platform with integration guides and modern development insights. ",
+      projectDesc:
+        "Built a MERN-based tech blog platform with integration guides and modern development insights. ",
       footerLink: [
         {
           name: "Visit Website",
@@ -259,7 +259,8 @@ const bigProjects = {
     {
       image: require("./assets/images/hobanke.png"),
       projectName: "HooBank",
-      projectDesc: "An informative bank website for users who enjoy to use banking service through website.Built using HTML, CSS & JAVASCRIPT. ",
+      projectDesc:
+        "An informative bank website for users who enjoy to use banking service through website.Built using HTML, CSS & JAVASCRIPT. ",
       footerLink: [
         {
           name: "Visit Website",
@@ -281,51 +282,48 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Top Honors in Web Usability Research",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "Awarded top honors at an international conference for research on improving web application usability, advancing user experience and modern web design.",
+      image: require("./assets/images/racsit.jpg"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Problem Solving",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "Solved 150+ problems in JavaScript and C++, demonstrating expertise in algorithms and iterative development.",
+      image: require("./assets/images/leetcode1.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Leetcode Profile",
+          url: "https://leetcode.com/u/hamzaali786/"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "React Developer",
+      subtitle: "Completed a React course, built an AI-powered chatbot using OpenAI, and integrated it into a project, showcasing full-stack and AI development skills.",
+      image: require("./assets/images/react.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "Certification", url: "https://www.udemy.com/certificate/UC-cc9933f9-52c2-4c65-bdc4-a1af2ec3f733/"},
+        
       ]
     }
   ],
@@ -412,7 +410,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

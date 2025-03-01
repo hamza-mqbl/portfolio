@@ -4,13 +4,15 @@ import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
+
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
   }
-  //Medium API returns blogs' content in HTML format. Below function extracts blogs' text content within paragraph tags
+
   function extractTextContent(html) {
     return typeof html === "string"
       ? html
@@ -21,6 +23,7 @@ export default function Blogs() {
           .join(" ")
       : NaN;
   }
+
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
@@ -44,9 +47,11 @@ export default function Blogs() {
       getProfileData();
     }
   }, []);
+
   if (!blogSection.display) {
     return null;
   }
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="blogs">
@@ -60,38 +65,35 @@ export default function Blogs() {
             {blogSection.subtitle}
           </p>
         </div>
-        <div className="blog-main-div">
-          <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== "true" ||
-            mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.url,
-                        image: blog.image,
-                        title: blog.title,
-                        description: blog.description
-                      }}
-                    />
-                  );
-                })
-              : mediumBlogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.link,
-                        title: blog.title,
-                        description: extractTextContent(blog.content)
-                      }}
-                    />
-                  );
-                })}
-          </div>
+
+        {/* Add a line and button */}
+        <div style={{ marginTop: "2rem" }}>
+          {/* <p style={{ 
+            fontSize: "1.2rem", 
+            color: isDark ? "#fff" : "#333", 
+            marginBottom: "1.5rem" 
+          }}>
+            Check out my blogs on my external website!
+          </p> */}
+          <button
+            style={{
+              padding: "0.8rem 1.5rem",
+              fontSize: "1rem",
+              fontWeight: "600",
+              color: "#fff",
+              backgroundColor: isDark ? "#55198b" : "#55198b",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+              transition: "background-color 0.3s ease",
+              boxShadow: isDark ? "0 4px 6px rgba(108, 99, 255, 0.2)" : "0 4px 6px rgba(0, 123, 255, 0.2)",
+            }}
+            onMouseOver={(e) => e.target.style.backgroundColor = isDark ? "#8c43ce" : "#8c43ce"}
+            onMouseOut={(e) => e.target.style.backgroundColor = isDark ? "#55198b" : "#55198b"}
+            onClick={() => window.open("https://mern-blog-3vqj.onrender.com", "_blank")}
+          >
+            Visit My Blog
+          </button>
         </div>
       </div>
     </Fade>

@@ -25,13 +25,14 @@
 .project-card-light:hover, .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
+
 .me {
   height: 68%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top:.5rem ;
+  margin-top: 0; /* Remove or reduce the top margin */
 }
 
 .project-image {
@@ -43,12 +44,8 @@
   background-repeat: no-repeat;
 }
 
-
-
 .project-detail {
-  height: 20%; /* Half card height */
-  // padding: 1rem;
-  // height: 20%;
+  // height: 20%; /* Half card height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +66,7 @@
 }
 
 .project-card-footer {
-  // margin-top: px;
+// margin-bottom: 1rem;
 }
 
 .project-card-footer span.project-tag {
@@ -80,21 +77,57 @@
   font-size: 0.75rem;
   height: 2em;
   justify-content: center;
+  align-items: center;
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 
 @media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(1, minmax(300px, 1fr)); /* Only one column on mobile */
+  }
+
   .project-card {
-    height: auto;
+    height: auto; /* Allow the card to adjust its height based on content */
   }
-  
+
+  .me {
+    height: auto; /* Adjust the height of the image container */
+    margin-top: 0; /* Remove or adjust the top margin */
+  }
+  .project-card-footer {
+    margin-bottom: 1rem;
+    }
+    
   .project-image {
-    height: 40%;
+    height: 200px; /* Set a fixed height for the image on mobile */
+    width: 100%; /* Ensure the image takes the full width */
+    border-radius: 10px; /* Adjust border radius if needed */
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image */
   }
-  
+
   .project-detail {
-    height: 60%;
+    height: auto; /* Allow the detail section to adjust its height */
+    padding: 1rem; /* Add padding for better spacing */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-card-footer {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 1rem; /* Add some margin for spacing */
+  }
+  .project-card-footer {
+    margin-bottom: 1rem;
+    }
+    
+  .project-tag {
+    font-size: 0.9rem; /* Adjust font size for medium screens */
+    padding: 0.5rem 1rem; /* Adjust padding for better button size */
+    height: auto; /* Allow the button to adjust its height */
   }
 }

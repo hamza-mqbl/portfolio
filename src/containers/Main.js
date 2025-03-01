@@ -60,9 +60,9 @@ const Main = () => {
             <StartupProject />
             <Achievement />
             <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
+            {/* <Talks /> */}
+            {/* <Twitter /> */}
+            {/* <Podcast /> */}
             <Profile />
             <Footer />
             <ScrollToTopButton />
