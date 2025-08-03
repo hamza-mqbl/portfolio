@@ -15,6 +15,7 @@ export default function StartupProject() {
   if (!bigProjects.display) return null;
 
   return (
+    // added distance of 20px
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
