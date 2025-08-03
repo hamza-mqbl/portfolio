@@ -176,15 +176,19 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Associate Software Engineer",
+      company: "Softaims",
+      companylogo: require("./assets/images/softaims.jpeg"),
+      date: "Mar 2025 – Present",
+      desc: "At Softaims, I built an AI-driven Influencer App using LangChain, RAG, and fine-tuned GPT models. I implemented semantic search, integrated React with scalable APIs, and managed vector databases for seamless AI-user interaction."
+    },
+
+    {
       role: "Mern Stack Developer",
       company: "Olumni Tech",
       companylogo: require("./assets/images/olumitech.jpeg"),
-      date: "Jan 2024 – Present",
+      date: "Jan 2024 – Mar 2025",
       desc: "At Olumni Tech, I integrated React.js with Node.js APIs, optimized performance with code splitting, and reduced load times by 20%. I built scalable RESTful APIs and responsive UI components, ensuring seamless UX and cross-browser compatibility."
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
     },
     {
       role: "Front-End Developer",
@@ -226,6 +230,19 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://levantecuisine.co.uk/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/image.png"),
+      projectName: "Light Work",
+      projectDesc:
+        "Built an AI-powered Influencer App using LangChain and RAG. Integrated fine-tuned GPT models, semantic search, and a responsive React interface for intelligent user interactions.",
+
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://lightworkhq.ai/"
         }
         //  you can add extra buttons here.
       ]
@@ -318,12 +335,15 @@ const achievementSection = {
 
     {
       title: "React Developer",
-      subtitle: "Completed a React course, built an AI-powered chatbot using OpenAI, and integrated it into a project, showcasing full-stack and AI development skills.",
+      subtitle:
+        "Completed a React course, built an AI-powered chatbot using OpenAI, and integrated it into a project, showcasing full-stack and AI development skills.",
       image: require("./assets/images/react.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: "https://www.udemy.com/certificate/UC-cc9933f9-52c2-4c65-bdc4-a1af2ec3f733/"},
-        
+        {
+          name: "Certification",
+          url: "https://www.udemy.com/certificate/UC-cc9933f9-52c2-4c65-bdc4-a1af2ec3f733/"
+        }
       ]
     }
   ],
