@@ -65,7 +65,7 @@ export default function StartupProject() {
                     <div className="project-card-footer">
                       {project.footerLink.map((link, i) => (
                         <span
-                        // style={{display:"flex", justifyContent:"center",alignItems:"center",}}
+                          // style={{display:"flex", justifyContent:"center",alignItems:"center",}}
                           key={i}
                           className={
                             isDark ? "dark-mode project-tag" : "project-tag"
