@@ -255,7 +255,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://e-shop-frontend-six.vercel.app/"
+          url: "https://e-shop-multivendor.vercel.app/"
         }
         //  you can add extra buttons here.
       ]
