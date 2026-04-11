@@ -22,7 +22,8 @@
   box-shadow: 0px 10px 30px -15px $darkBoxShadow;
 }
 
-.project-card-light:hover, .project-card-dark:hover {
+.project-card-light:hover,
+.project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
 
@@ -66,7 +67,7 @@
 }
 
 .project-card-footer {
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project-card-footer span.project-tag {
@@ -85,7 +86,10 @@ margin-bottom: 1rem;
 
 @media (max-width: 768px) {
   .projects-container {
-    grid-template-columns: repeat(1, minmax(300px, 1fr)); /* Only one column on mobile */
+    grid-template-columns: repeat(
+      1,
+      minmax(300px, 1fr)
+    ); /* Only one column on mobile */
   }
 
   .project-card {
@@ -98,8 +102,8 @@ margin-bottom: 1rem;
   }
   .project-card-footer {
     margin-bottom: 1rem;
-    }
-    
+  }
+
   .project-image {
     height: 200px; /* Set a fixed height for the image on mobile */
     width: 100%; /* Ensure the image takes the full width */
@@ -123,8 +127,8 @@ margin-bottom: 1rem;
   }
   .project-card-footer {
     margin-bottom: 1rem;
-    }
-    
+  }
+
   .project-tag {
     font-size: 0.9rem; /* Adjust font size for medium screens */
     padding: 0.5rem 1rem; /* Adjust padding for better button size */

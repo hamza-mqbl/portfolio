@@ -31,7 +31,7 @@ export default function Blogs() {
         </div>
 
         {/* Add a line and button */}
-        <div style={{ marginTop: "2rem" }}>
+        <div style={{marginTop: "2rem"}}>
           {/* <p style={{ 
             fontSize: "1.2rem", 
             color: isDark ? "#fff" : "#333", 
@@ -50,11 +50,19 @@ export default function Blogs() {
               borderRadius: "5px",
               cursor: "pointer",
               transition: "background-color 0.3s ease",
-              boxShadow: isDark ? "0 4px 6px rgba(108, 99, 255, 0.2)" : "0 4px 6px rgba(0, 123, 255, 0.2)",
+              boxShadow: isDark
+                ? "0 4px 6px rgba(108, 99, 255, 0.2)"
+                : "0 4px 6px rgba(0, 123, 255, 0.2)"
             }}
-            onMouseOver={(e) => e.target.style.backgroundColor = isDark ? "#8c43ce" : "#8c43ce"}
-            onMouseOut={(e) => e.target.style.backgroundColor = isDark ? "#55198b" : "#55198b"}
-            onClick={() => window.open("https://mern-blog-3vqj.onrender.com", "_blank")}
+            onMouseOver={e =>
+              (e.target.style.backgroundColor = isDark ? "#8c43ce" : "#8c43ce")
+            }
+            onMouseOut={e =>
+              (e.target.style.backgroundColor = isDark ? "#55198b" : "#55198b")
+            }
+            onClick={() =>
+              window.open("https://mern-blog-3vqj.onrender.com", "_blank")
+            }
           >
             Visit My Blog
           </button>
