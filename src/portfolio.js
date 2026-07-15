@@ -261,6 +261,18 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/qadam.png"),
+      projectName: "Qadam Store",
+      projectDesc:
+        "Built a full-stack multivendor shoe marketplace (React, Redux Toolkit, Node/Express, MongoDB) with seller storefronts, JWT auth, JazzCash & COD payments, real-time Socket.IO buyer–seller chat, and a complete cart-to-checkout flow.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://qadam-shoe-store-fe.vercel.app/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/leventCusine.png"),
       projectName: "Levante Cuisine",
       projectDesc:
