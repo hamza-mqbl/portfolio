@@ -338,6 +338,45 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Claude Code in Action",
+      subtitle:
+        "Completed Anthropic Education's course on building with Claude Code — agentic workflows, tooling, and real-world development with Claude.",
+      image: require("./assets/images/claudeCodeInAction.png"),
+      imageAlt: "Claude Code in Action Certificate",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://verify.skilljar.com/c/eth25bsi8jed"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Agent Skills",
+      subtitle:
+        "Anthropic Education certification on Agent Skills — packaging reusable instructions and capabilities to extend Claude agents.",
+      image: require("./assets/images/agentSkills.png"),
+      imageAlt: "Introduction to Agent Skills Certificate",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://verify.skilljar.com/c/guisbkgy5zxb"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Subagents",
+      subtitle:
+        "Anthropic Education certification on Subagents — orchestrating specialized agents for parallel, multi-step task execution.",
+      image: require("./assets/images/subagents.png"),
+      imageAlt: "Introduction to Subagents Certificate",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://verify.skilljar.com/c/xrgutns74cew"
+        }
+      ]
+    },
+    {
       title: "Top Honors in Web Usability Research",
       subtitle:
         "Awarded top honors at an international conference for research on improving web application usability, advancing user experience and modern web design.",

@@ -1,9 +1,9 @@
 @import "../../_globalColor";
 
 .card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill the box edge-to-edge so every card image is equal */
 }
 .card-title {
   color: $titleColor;
@@ -38,8 +38,10 @@
 }
 .certificate-image-div {
   position: relative;
-  height: 250px;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Same box shape for every card so all images align */
   overflow: hidden;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
