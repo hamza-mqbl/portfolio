@@ -11,6 +11,16 @@ export default function StartupProject() {
     win.focus();
   }
 
+  // For app links, route to the store that matches the visitor's platform.
+  // Falls back to the App Store on desktop / unknown platforms.
+  function resolveLinkUrl(link) {
+    if (link.url) return link.url;
+    const ua = navigator.userAgent || navigator.vendor || "";
+    if (/android/i.test(ua)) return link.googleUrl || link.appleUrl;
+    if (/iPad|iPhone|iPod/i.test(ua)) return link.appleUrl || link.googleUrl;
+    return link.appleUrl || link.googleUrl;
+  }
+
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) return null;
 
@@ -71,7 +81,7 @@ export default function StartupProject() {
                           className={
                             isDark ? "dark-mode project-tag" : "project-tag"
                           }
-                          onClick={() => openUrlInNewTab(link.url)}
+                          onClick={() => openUrlInNewTab(resolveLinkUrl(link))}
                         >
                           {link.name}
                         </span>

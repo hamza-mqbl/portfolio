@@ -222,6 +222,45 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
+      image: require("./assets/images/Personai.png"),
+      projectName: "PersonAI",
+      projectDesc:
+        "Shipped a production React Native (Expo) iOS & Android AI assistant across 40+ screens — AI \"Brain Dump\" task parsing, voice-to-text, two-way Google Calendar sync, Clerk auth, and RevenueCat subscriptions.",
+      footerLink: [
+        {
+          name: "Get the App",
+          appleUrl:
+            "https://apps.apple.com/us/app/personai-to-do-list-planner/id6759544344",
+          googleUrl:
+            "https://play.google.com/store/apps/details?id=com.app.personai&hl=en"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/lalalaugh.png"),
+      projectName: "La La Laugh",
+      projectDesc:
+        "Designed and built the landing page for La La Laugh, a social entertainment app for humor sharing. Implemented on-page SEO that ranked it on the first page of Google search results.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://www.lalalaugh.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/paradiseEstate.png"),
+      projectName: "Paradise Estate Developer",
+      projectDesc:
+        "Built a real-estate property-dealer platform with Next.js and Sanity CMS. Features area-based property listings, a closed-deals showcase, and instant WhatsApp & call inquiries for a Lahore-based agency.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://paradise-neon.vercel.app/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/leventCusine.png"),
       projectName: "Levante Cuisine",
       projectDesc:

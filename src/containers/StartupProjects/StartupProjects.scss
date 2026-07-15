@@ -2,7 +2,7 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 per row on large screens */
   gap: 2rem;
 }
 
@@ -13,7 +13,6 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   overflow: hidden;
-  height: 450px; /* Fixed height */
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   transition: all 0.3s ease;
 }
@@ -24,33 +23,31 @@
 
 .project-card-light:hover,
 .project-card-dark:hover {
+  transform: translateY(-4px);
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
 
 .me {
-  height: 68%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  aspect-ratio: 11 / 5; /* Uniform banner shape for every thumbnail */
   overflow: hidden;
-  margin-top: 0; /* Remove or reduce the top margin */
 }
 
 .project-image {
   height: 100%;
   width: 100%;
-  border-radius: 1.4rem;
-  background-size: contain; /* Ensures the entire image is visible */
-  background-position: center;
+  background-size: cover; /* Fill the banner edge-to-edge, no letterboxing */
+  background-position: top center; /* Anchor to each site's header/hero */
   background-repeat: no-repeat;
 }
 
 .project-detail {
-  // height: 20%; /* Half card height */
+  flex: 1; /* Grow so cards in a row stay equal height */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
+  padding: 1.2rem 1.2rem 1.5rem;
 }
 
 .card-title {
@@ -62,12 +59,14 @@
 
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.3rem;
+  font-size: 16px;
+  line-height: 1.4rem;
+  flex: 1; /* Push the footer button to the bottom of the card */
 }
 
 .project-card-footer {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .project-card-footer span.project-tag {
@@ -84,54 +83,24 @@
   transition: 0.2s ease-in;
 }
 
-@media (max-width: 768px) {
+/* Tablets / small laptops: 2 per row */
+@media (max-width: 1200px) {
   .projects-container {
-    grid-template-columns: repeat(
-      1,
-      minmax(300px, 1fr)
-    ); /* Only one column on mobile */
-  }
-
-  .project-card {
-    height: auto; /* Allow the card to adjust its height based on content */
-  }
-
-  .me {
-    height: auto; /* Adjust the height of the image container */
-    margin-top: 0; /* Remove or adjust the top margin */
-  }
-  .project-card-footer {
-    margin-bottom: 1rem;
-  }
-
-  .project-image {
-    height: 200px; /* Set a fixed height for the image on mobile */
-    width: 100%; /* Ensure the image takes the full width */
-    border-radius: 10px; /* Adjust border radius if needed */
-    background-size: cover; /* Ensure the image covers the area */
-    background-position: center; /* Center the image */
-  }
-
-  .project-detail {
-    height: auto; /* Allow the detail section to adjust its height */
-    padding: 1rem; /* Add padding for better spacing */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .project-card-footer {
-    display: flex;
-    justify-content: center; /* Center the button horizontally */
-    align-items: center; /* Center the button vertically */
-    margin-top: 1rem; /* Add some margin for spacing */
-  }
-  .project-card-footer {
-    margin-bottom: 1rem;
+/* Mobile: single column */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 
-  .project-tag {
-    font-size: 0.9rem; /* Adjust font size for medium screens */
-    padding: 0.5rem 1rem; /* Adjust padding for better button size */
-    height: auto; /* Allow the button to adjust its height */
+  .me {
+    aspect-ratio: 16 / 9; /* Slightly taller thumbnail reads better on phones */
+  }
+
+  .card-subtitle {
+    font-size: 17px;
   }
 }
