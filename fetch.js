@@ -72,7 +72,8 @@ if (USE_GITHUB_DATA === "true") {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestFailed);
+      console.warn(`GitHub fetch failed (status ${res.statusCode}), skipping.`);
+      return;
     }
 
     res.on("data", d => {
@@ -108,7 +109,10 @@ if (MEDIUM_USERNAME !== undefined) {
 
     console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
-      throw new Error(ERR.requestMediumFailed);
+      console.warn(
+        `Medium fetch failed (status ${res.statusCode}), skipping blogs.`
+      );
+      return;
     }
 
     res.on("data", d => {
