@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Hamza Maqbool",
-  title: "Hi all, I'm Hamza",
+  title: "Hi, I'm Hamza",
   subTitle: emoji(
-    "A passionate Full Stack Software Engineer 🚀 who loves building AI-powered products. I craft web and mobile applications with JavaScript / Reactjs / Nextjs / Nodejs / React Native, and ship intelligent features with LLMs and modern AI tooling."
+    "I build production-grade AI products and full-stack apps — fast, secure, and ready to scale. 🚀 Full-Stack Engineer with 2.5+ years shipping TypeScript products end-to-end: Next.js frontends, NestJS backends, React Native apps, and AI features powered by RAG, voice, and LLM pipelines. Based in Lahore — open to remote and relocation."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1oPskVGwtqjdLJZzV6aGAdNojwoRexXJW/view?usp=sharing", // Set to empty to hide the button
@@ -48,14 +48,18 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I build",
+  subTitle: "FULL-STACK ENGINEER SPECIALISING IN TYPESCRIPT, AI PRODUCTS, AND REACT NATIVE",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Full-Stack Web Apps — From admin platforms to SaaS products. React, Next.js, NestJS, PostgreSQL. Clean architecture, role-based access, real-time features, CI/CD from day one."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS ")
+    emoji(
+      "⚡ AI-Powered Products — RAG pipelines, voice agents, streaming chat, LLM integrations. Production AI features using OpenAI, LangChain, Pinecone, and VAPI — not just wrappers, but real products people use."
+    ),
+    emoji(
+      "⚡ React Native Mobile Apps — Cross-platform iOS and Android with Expo. Payments via RevenueCat, push notifications, 98% crash-free in production. From MVP to App Store."
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -63,60 +67,52 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
+      skillName: "TypeScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "React / Next.js",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "React Native",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "NestJS",
+      fontAwesomeClassname: "fas fa-server"
     },
     {
-      skillName: "sql-database",
+      skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
+      skillName: "Redis",
+      fontAwesomeClassname: "fas fa-memory"
+    },
+    {
+      skillName: "OpenAI / LangChain",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "next.js",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "GitHub Actions",
+      fontAwesomeClassname: "fab fa-github"
     },
     {
-      skillName: "material-ui",
-      fontAwesomeClassname: "fas fa-palette"
-    },
-    {
-      skillName: "shadcn-ui",
-      fontAwesomeClassname: "fas fa-layer-group"
+      skillName: "Stripe / RevenueCat",
+      fontAwesomeClassname: "fab fa-stripe"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -152,11 +148,11 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend", //Insert stack or technology you have experience in
-      progressPercentage: "85%" //Insert relative proficiency in percentage
+      Stack: "Frontend",
+      progressPercentage: "85%"
     },
     {
       Stack: "Backend",
@@ -176,33 +172,23 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Associate Software Engineer",
+      role: "Full-Stack Engineer",
       company: "Softaims",
       companylogo: require("./assets/images/softaims.jpeg"),
       date: "Mar 2025 – Present",
-      desc: "At Softaims, I built an AI-driven Influencer App using LangChain, RAG, and fine-tuned GPT models. I implemented semantic search, integrated React with scalable APIs, and managed vector databases for seamless AI-user interaction."
+      desc: "Client and product work across web and mobile: enterprise admin platforms, data engineering, and AI-powered mobile apps.",
+      descBullets: [
+        "Aliant+ — delivered 17+ admin modules for a global law/accounting firm alliance (17+ countries). NestJS APIs secured with Clerk JWT, 42-rule OWASP gate, Socket.IO real-time chat, BullMQ/Redis workers. Stack: React, TypeScript, TanStack Query, NestJS, Prisma, PostgreSQL.",
+        "Jobber ETL — hourly sync of ~10K records from Jobber's GraphQL API into PostgreSQL. Reconciled ~$3.5M of revenue to the cent. Idempotent bulk upserts, OAuth 2.0 rotating tokens, 5 Metabase dashboards. Stack: Node.js, TypeScript, Prisma, Railway.",
+        "PersonAI — live AI productivity app on iOS & Android. 98% crash-free session rate via GitHub Actions + Expo EAS CI/CD. Stack: React Native, Expo, NestJS, Prisma, RevenueCat."
+      ]
     },
-
     {
-      role: "Mern Stack Developer",
-      company: "Olumni Tech",
+      role: "MERN Stack Developer",
+      company: "Olumi Tech",
       companylogo: require("./assets/images/olumitech.jpeg"),
-      date: "Jan 2024 – Mar 2025",
-      desc: "At Olumni Tech, I integrated React.js with Node.js APIs, optimized performance with code splitting, and reduced load times by 20%. I built scalable RESTful APIs and responsive UI components, ensuring seamless UX and cross-browser compatibility."
-    },
-    {
-      role: "Front-End Developer",
-      company: "Next-home",
-      companylogo: require("./assets/images/nexthom.jpeg"),
-      date: "April 2023 – jan 2024",
-      desc: "Optimized performance (15% faster queries), built scalable React.js components with secure APIs, enhanced UI with Redux Toolkit, and streamlined deployment using Docker and Git."
-    },
-    {
-      role: "React Internship",
-      company: "Pixii Solutions",
-      companylogo: require("./assets/images/pixi.jpeg"),
-      date: "Jan 2023 – June 2023",
-      desc: "During this time, i gain practical experience in developing web applications using React.js. I work on various tasks assigned to me. Such as building user interfaces and optimizing application performance."
+      date: "Jan 2024 – Feb 2025",
+      desc: "Integrated React frontends with Node/Express REST APIs, reduced load time 20% with code splitting and lazy loading. Designed REST APIs with robust error handling and built responsive, reusable UI components."
     }
   ]
 };
@@ -218,53 +204,63 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "PRODUCTION SYSTEMS I'VE BUILT END-TO-END",
   projects: [
     {
-      image: require("./assets/images/Personai.png"),
-      projectName: "PersonAI",
+      image: require("./assets/images/softaims.jpeg"),
+      projectName: "Aliant+ Admin Platform",
       projectDesc:
-        "Shipped a production React Native (Expo) iOS & Android AI assistant across 40+ screens — AI \"Brain Dump\" task parsing, voice-to-text, two-way Google Calendar sync, Clerk auth, and RevenueCat subscriptions.",
+        "17-module admin platform for a global professional network spanning 800+ law and accounting firms across 17+ countries. Built with React, TypeScript, TanStack Query, NestJS, Prisma, PostgreSQL, Clerk JWT, Socket.IO, BullMQ, and a 42-rule OWASP security gate on every deploy.",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/softaims.jpeg"),
+      projectName: "Jobber → PostgreSQL ETL Pipeline",
+      projectDesc:
+        "Hourly ETL engine syncing ~10K records from Jobber's GraphQL API into PostgreSQL. Reconciled ~$3.5M of revenue to the cent. Idempotent bulk upserts, OAuth 2.0 rotating refresh tokens, rate-limit pacing, and 5 Metabase dashboards. Stack: Node.js, TypeScript, Express, Prisma, PostgreSQL, Railway.",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/Personai.png"),
+      projectName: "PersonAI — iOS & Android",
+      projectDesc:
+        "Live AI productivity app on the App Store and Google Play. 98% crash-free session rate. Built with React Native, Expo, NativeWind, NestJS, Prisma, Clerk, RevenueCat subscriptions, and a full GitHub Actions + Expo EAS CI/CD pipeline.",
       footerLink: [
         {
-          name: "Get the App",
-          appleUrl:
-            "https://apps.apple.com/us/app/personai-to-do-list-planner/id6759544344",
-          googleUrl:
-            "https://play.google.com/store/apps/details?id=com.app.personai&hl=en"
+          name: "App Store",
+          url: "https://apps.apple.com/us/app/personai-to-do-list-planner/id6759544344"
+        },
+        {
+          name: "Google Play",
+          url: "https://play.google.com/store/apps/details?id=com.app.personai&hl=en"
         }
       ]
     },
     {
-      image: require("./assets/images/lalalaugh.png"),
-      projectName: "La La Laugh",
+      image: require("./assets/images/image.png"),
+      projectName: "Lightwork — AI RAG Platform",
       projectDesc:
-        "Designed and built the landing page for La La Laugh, a social entertainment app for humor sharing. Implemented on-page SEO that ranked it on the first page of Google search results.",
+        "AI-powered platform with a RAG pipeline, streaming chat, and voice agent built on LangChain, Pinecone, and VAPI. Fine-tuned GPT models with semantic search across a knowledge base. Stack: React, NestJS, OpenAI, LangChain, Pinecone.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://www.lalalaugh.com/"
+          url: "https://lightworkhq.ai/"
         }
       ]
     },
     {
       image: require("./assets/images/paradiseEstate.png"),
-      projectName: "Paradise Estate Developer",
+      projectName: "SN Solar — Bilingual Next.js Site",
       projectDesc:
-        "Built a real-estate property-dealer platform with Next.js and Sanity CMS. Features area-based property listings, a closed-deals showcase, and instant WhatsApp & call inquiries for a Lahore-based agency.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://paradise-neon.vercel.app/"
-        }
-      ]
+        "Bilingual (English/Urdu RTL) Next.js 16 site. Lighthouse mobile performance: 75 → 92, 100/100 accessibility, best practices, and SEO. Sanity CMS, Server Actions, next-intl, 50-URL sitemap, JSON-LD structured data. Built and launched solo.",
+      footerLink: []
     },
     {
       image: require("./assets/images/qadam.png"),
       projectName: "Qadam Store",
       projectDesc:
-        "Built a full-stack multivendor shoe marketplace (React, Redux Toolkit, Node/Express, MongoDB) with seller storefronts, JWT auth, JazzCash & COD payments, real-time Socket.IO buyer–seller chat, and a complete cart-to-checkout flow.",
+        "Full-stack multivendor shoe marketplace with seller storefronts, JWT auth, JazzCash & COD payments, real-time Socket.IO buyer–seller chat, and a complete cart-to-checkout flow. Stack: React, Redux Toolkit, Node/Express, MongoDB.",
       footerLink: [
         {
           name: "Visit Website",
@@ -276,7 +272,7 @@ const bigProjects = {
       image: require("./assets/images/leventCusine.png"),
       projectName: "Levante Cuisine",
       projectDesc:
-        "Built a multi-restaurant platform with real-time menus, secure payments, and a 30% faster response time.",
+        "Multi-restaurant platform with real-time menus, secure payments, and optimized API response times.",
       footerLink: [
         {
           name: "Visit Website",
@@ -285,54 +281,14 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/image.png"),
-      projectName: "Light Work",
+      image: require("./assets/images/lalalaugh.png"),
+      projectName: "La La Laugh",
       projectDesc:
-        "Built an AI-powered Influencer App using LangChain and RAG. Integrated fine-tuned GPT models, semantic search, and a responsive React interface for intelligent user interactions.",
-
+        "Landing page for a social entertainment app. On-page SEO implementation that ranked on the first page of Google search results.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://lightworkhq.ai/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/multivendor.png"),
-      projectName: "VendorHub",
-      projectDesc:
-        "Built a multi-vendor e-commerce platform with secure payments, real-time messaging, and optimized performance with Redux Toolkit. ",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://e-shop-multivendor.vercel.app/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/blogmern.png"),
-      projectName: "StackGuide",
-      projectDesc:
-        "Built a MERN-based tech blog platform with integration guides and modern development insights. ",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://mern-blog-3vqj.onrender.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/hobanke.png"),
-      projectName: "HooBank",
-      projectDesc:
-        "An informative bank website for users who enjoy to use banking service through website.Built using HTML, CSS & JAVASCRIPT. ",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://react-hoobank-app.netlify.app/"
+          url: "https://www.lalalaugh.com/"
         }
       ]
     }
@@ -480,7 +436,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -493,7 +449,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -506,18 +462,18 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Let's build something worth shipping. ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Open to full-stack and AI engineering roles — remote, UAE, or Germany. Also available for selective freelance projects. Drop me a line.",
+  number: "",
+  email_address: "hamzaaliics@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
