@@ -49,7 +49,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I build",
-  subTitle: "FULL-STACK ENGINEER SPECIALISING IN TYPESCRIPT, AI PRODUCTS, AND REACT NATIVE",
+  subTitle:
+    "FULL-STACK ENGINEER SPECIALISING IN TYPESCRIPT, AI PRODUCTS, AND REACT NATIVE",
   skills: [
     emoji(
       "⚡ Full-Stack Web Apps — From admin platforms to SaaS products. React, Next.js, NestJS, PostgreSQL. Clean architecture, role-based access, real-time features, CI/CD from day one."
