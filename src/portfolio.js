@@ -23,7 +23,7 @@ const greeting = {
   username: "Hamza Maqbool",
   title: "Hi, I'm Hamza",
   subTitle: emoji(
-    "I build production-grade AI products and full-stack apps — fast, secure, and ready to scale. 🚀 Full-Stack Engineer with 2.5+ years shipping TypeScript products end-to-end: Next.js frontends, NestJS backends, React Native apps, and AI features powered by RAG, voice, and LLM pipelines. Based in Lahore — open to remote and relocation."
+    "I build production-grade AI products and full-stack apps — fast, secure, and ready to scale. 🚀 Full-Stack Engineer with 3+ years shipping TypeScript products end-to-end: Next.js frontends, NestJS backends, React Native apps, and AI features powered by RAG, voice, and LLM pipelines. Based in Lahore — open to remote and relocation."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1oPskVGwtqjdLJZzV6aGAdNojwoRexXJW/view?usp=sharing", // Set to empty to hide the button
@@ -198,8 +198,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // GitHub-fetch contact off (uses normal contact); see #2 fix
+  display: false // GitHub pinned-repos "Open Source" section off (manual bigProjects covers projects)
 };
 
 // Some big projects you have worked on
