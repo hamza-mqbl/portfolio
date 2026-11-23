@@ -37,7 +37,6 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/hamza-maqbool/",
   gmail: "hamzaaliics@gmail.com",
   gitlab: "https://gitlab.com/hamzaaliics",
-  facebook: "https://www.facebook.com/profile.php?id=100071125152940",
   medium: "https://medium.com/@hamzaaliics",
   stackoverflow: "https://stackoverflow.com/users/22715274/mehru",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -134,14 +133,6 @@ const educationInfo = {
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       // ]
-    },
-    {
-      schoolName: "Punjab group of colleges",
-      logo: require("./assets/images/pgc.png"),
-      subHeader: "Intermediate in Computer Science",
-      duration: "September 2019 - April 2021",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, c++, ..."
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -212,21 +203,21 @@ const bigProjects = {
       image: require("./assets/images/softaims.jpeg"),
       projectName: "Aliant+ Admin Platform",
       projectDesc:
-        "17-module admin platform for a global professional network spanning 800+ law and accounting firms across 17+ countries. Built with React, TypeScript, TanStack Query, NestJS, Prisma, PostgreSQL, Clerk JWT, Socket.IO, BullMQ, and a 42-rule OWASP security gate on every deploy.",
+        "Owned the admin backbone and real-time chat for Aliant+, a global alliance of legal and accounting firms across 17+ countries. Built 17+ admin modules end to end: NestJS APIs secured with Clerk JWT behind a 42-rule OWASP gate on every deploy, Socket.IO messaging, and BullMQ/Redis workers. Stack: React, TypeScript, TanStack Query, NestJS, Prisma, PostgreSQL.",
       footerLink: []
     },
     {
       image: require("./assets/images/softaims.jpeg"),
       projectName: "Jobber → PostgreSQL ETL Pipeline",
       projectDesc:
-        "Hourly ETL engine syncing ~10K records from Jobber's GraphQL API into PostgreSQL. Reconciled ~$3.5M of revenue to the cent. Idempotent bulk upserts, OAuth 2.0 rotating refresh tokens, rate-limit pacing, and 5 Metabase dashboards. Stack: Node.js, TypeScript, Express, Prisma, PostgreSQL, Railway.",
+        "Replaced a fragile manual spreadsheet with an automated revenue engine that reconciles ~$3.5M to the cent. An hourly ETL syncs ~10K records from Jobber's GraphQL API into PostgreSQL, and it surfaced a $292K reporting understatement the old process had hidden. Idempotent bulk upserts, OAuth 2.0 token rotation, rate-limit pacing, and 5 Metabase dashboards. Stack: Node.js, TypeScript, Prisma, PostgreSQL, Railway.",
       footerLink: []
     },
     {
       image: require("./assets/images/Personai.png"),
       projectName: "PersonAI — iOS & Android",
       projectDesc:
-        "Live AI productivity app on the App Store and Google Play. 98% crash-free session rate. Built with React Native, Expo, NativeWind, NestJS, Prisma, Clerk, RevenueCat subscriptions, and a full GitHub Actions + Expo EAS CI/CD pipeline.",
+        "Built and shipped PersonAI solo: a live AI productivity app on the App Store and Google Play with 2,500+ users at a 98% crash-free session rate. A multi-agent engine turns a messy brain-dump into a planned day. Owned the mobile app, the NestJS backend, subscriptions, and the release pipeline. Stack: React Native, Expo, NestJS, Prisma, RevenueCat, GitHub Actions + Expo EAS.",
       footerLink: [
         {
           name: "App Store",
@@ -303,7 +294,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications and recognition from my work.",
 
   achievementsCards: [
     {
@@ -350,7 +341,7 @@ const achievementSection = {
       subtitle:
         "Awarded top honors at an international conference for research on improving web application usability, advancing user experience and modern web design.",
       image: require("./assets/images/racsit.jpg"),
-      imageAlt: "Google Code-In Logo",
+      imageAlt: "Top Honors research award certificate",
       footerLink: [
         // {
         //   name: "Certification",
@@ -366,33 +357,6 @@ const achievementSection = {
         // }
       ]
     },
-    {
-      title: "Problem Solving",
-      subtitle:
-        "Solved 150+ problems in JavaScript and C++, demonstrating expertise in algorithms and iterative development.",
-      image: require("./assets/images/leetcode1.png"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Leetcode Profile",
-          url: "https://leetcode.com/u/hamzaali786/"
-        }
-      ]
-    },
-
-    {
-      title: "React Developer",
-      subtitle:
-        "Completed a React course, built an AI-powered chatbot using OpenAI, and integrated it into a project, showcasing full-stack and AI development skills.",
-      image: require("./assets/images/react.jpeg"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://www.udemy.com/certificate/UC-cc9933f9-52c2-4c65-bdc4-a1af2ec3f733/"
-        }
-      ]
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -460,7 +424,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Let's build something worth shipping. ☎️"),
   subtitle:
-    "Open to full-stack and AI engineering roles — remote, UAE, or Germany. Also available for selective freelance projects. Drop me a line.",
+    "Open to full-stack and AI engineering roles — remote or UAE. Also available for selective freelance projects. Drop me a line.",
   number: "",
   email_address: "hamzaaliics@gmail.com"
 };

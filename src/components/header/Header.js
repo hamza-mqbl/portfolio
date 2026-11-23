@@ -51,6 +51,9 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
           {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
@@ -79,11 +82,8 @@ function Header() {
           <li>
             <a href="#contact">Contact Me</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+          <li className="header-toggle">
+            <ToggleSwitch />
           </li>
         </ul>
       </header>

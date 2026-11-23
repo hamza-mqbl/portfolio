@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <h2 className="heading contact-title">{contactInfo.title}</h2>
             <p
               className={
                 isDark
@@ -56,7 +56,7 @@ export default function Contact() {
             {illustration.animated ? (
               <DisplayLottie animationData={email} />
             ) : (
-              <img
+              <img loading="lazy"
                 alt="Man working"
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>

@@ -11,6 +11,7 @@ const ToggleSwitch = () => {
   return (
     <label className="switch">
       <input
+        aria-label="Toggle dark mode"
         type="checkbox"
         checked={isDark}
         onChange={() => {

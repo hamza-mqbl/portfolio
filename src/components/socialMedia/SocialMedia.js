@@ -11,7 +11,7 @@ export default function socialMedia() {
       {socialMediaLinks.github ? (
         <a
           href={socialMediaLinks.github}
-          className="icon-button github"
+          aria-label="Github" className="icon-button github"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -23,7 +23,7 @@ export default function socialMedia() {
       {socialMediaLinks.linkedin ? (
         <a
           href={socialMediaLinks.linkedin}
-          className="icon-button linkedin"
+          aria-label="Linkedin" className="icon-button linkedin"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -35,7 +35,7 @@ export default function socialMedia() {
       {socialMediaLinks.gmail ? (
         <a
           href={`mailto:${socialMediaLinks.gmail}`}
-          className="icon-button google"
+          aria-label="Email" className="icon-button google"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -47,7 +47,7 @@ export default function socialMedia() {
       {socialMediaLinks.gitlab ? (
         <a
           href={socialMediaLinks.gitlab}
-          className="icon-button gitlab"
+          aria-label="Gitlab" className="icon-button gitlab"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -59,7 +59,7 @@ export default function socialMedia() {
       {socialMediaLinks.facebook ? (
         <a
           href={socialMediaLinks.facebook}
-          className="icon-button facebook"
+          aria-label="Facebook" className="icon-button facebook"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -71,7 +71,7 @@ export default function socialMedia() {
       {socialMediaLinks.instagram ? (
         <a
           href={socialMediaLinks.instagram}
-          className="icon-button instagram"
+          aria-label="Instagram" className="icon-button instagram"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -83,7 +83,7 @@ export default function socialMedia() {
       {socialMediaLinks.twitter ? (
         <a
           href={socialMediaLinks.twitter}
-          className="icon-button twitter"
+          aria-label="Twitter" className="icon-button twitter"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -95,7 +95,7 @@ export default function socialMedia() {
       {socialMediaLinks.medium ? (
         <a
           href={socialMediaLinks.medium}
-          className="icon-button medium"
+          aria-label="Medium" className="icon-button medium"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -107,7 +107,7 @@ export default function socialMedia() {
       {socialMediaLinks.stackoverflow ? (
         <a
           href={socialMediaLinks.stackoverflow}
-          className="icon-button stack-overflow"
+          aria-label="Stack" className="icon-button stack-overflow"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -119,7 +119,7 @@ export default function socialMedia() {
       {socialMediaLinks.kaggle ? (
         <a
           href={socialMediaLinks.kaggle}
-          className="icon-button kaggle"
+          aria-label="Kaggle" className="icon-button kaggle"
           target="_blank"
           rel="noopener noreferrer"
         >
