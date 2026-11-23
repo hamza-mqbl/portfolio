@@ -18,10 +18,11 @@ function ProjectCover({name, metric, icon, seed = 0}) {
     <div className="proj-cover" style={{backgroundImage: gradients[seed % gradients.length]}}>
       <div className="proj-cover__grid" />
       <div className="proj-cover__icon">{icon}</div>
-      <div className="proj-cover__text">
-        <div className="proj-cover__name">{name}</div>
-        {metric && <div className="proj-cover__metric">{metric}</div>}
-      </div>
+      {metric && (
+        <div className="proj-cover__text">
+          <div className="proj-cover__metric">{metric}</div>
+        </div>
+      )}
     </div>
   );
 }

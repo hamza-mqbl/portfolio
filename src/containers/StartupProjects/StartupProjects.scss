@@ -30,18 +30,17 @@
 }
 
 .proj-card__media {
+  position: relative;
   aspect-ratio: 16 / 9;
-  overflow: hidden;
-  /* subtle framed background so contained screenshots sit cleanly, no crop */
-  background: radial-gradient(circle at 50% 0%, #1b2233, #0f141e);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  overflow: hidden; /* clips image zoom AND cover text — no overflow */
+  background: #11161f;
 }
 .proj-card__media img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* show the WHOLE screenshot — no cropping */
+  /* cover = every image fills the box the SAME SIZE regardless of source ratio
+     (research-backed for consistent card thumbnails); top = show the hero */
+  object-fit: cover;
   object-position: top center;
   transition: transform 0.4s ease;
   display: block;
@@ -129,9 +128,8 @@
 
 /* ── Branded gradient cover (screenshot-less projects) ── */
 .proj-cover {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -165,16 +163,21 @@
   z-index: 1;
 }
 .proj-cover__name {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
   opacity: 0.92;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .proj-cover__metric {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 750;
   line-height: 1.1;
   letter-spacing: -0.3px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 /* light theme */
