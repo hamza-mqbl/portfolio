@@ -200,92 +200,79 @@ const bigProjects = {
   subtitle: "PRODUCTION SYSTEMS I'VE BUILT END-TO-END",
   projects: [
     {
-      image: require("./assets/images/softaims.jpeg"),
+      coverIcon: "A+",
       projectName: "Aliant+ Admin Platform",
       projectDesc:
-        "Owned the admin backbone and real-time chat for Aliant+, a global alliance of legal and accounting firms across 17+ countries. Built 17+ admin modules end to end: NestJS APIs secured with Clerk JWT behind a 42-rule OWASP gate on every deploy, Socket.IO messaging, and BullMQ/Redis workers. Stack: React, TypeScript, TanStack Query, NestJS, Prisma, PostgreSQL.",
+        "Owned the admin backbone and real-time chat for a global alliance of legal and accounting firms across 17+ countries. NestJS APIs behind a 42-rule OWASP gate on every deploy, Socket.IO messaging, and BullMQ/Redis workers.",
+      metric: "17+ modules",
+      tags: ["React", "TypeScript", "NestJS", "Socket.IO", "PostgreSQL"],
       footerLink: []
     },
     {
-      image: require("./assets/images/softaims.jpeg"),
-      projectName: "Jobber → PostgreSQL ETL Pipeline",
+      coverIcon: "$",
+      projectName: "Jobber \u2192 PostgreSQL ETL Pipeline",
       projectDesc:
-        "Replaced a fragile manual spreadsheet with an automated revenue engine that reconciles ~$3.5M to the cent. An hourly ETL syncs ~10K records from Jobber's GraphQL API into PostgreSQL, and it surfaced a $292K reporting understatement the old process had hidden. Idempotent bulk upserts, OAuth 2.0 token rotation, rate-limit pacing, and 5 Metabase dashboards. Stack: Node.js, TypeScript, Prisma, PostgreSQL, Railway.",
+        "Replaced a fragile manual spreadsheet with an automated revenue engine that reconciles ~$3.5M to the cent, and surfaced a $292K reporting understatement the old process had hidden. Idempotent bulk upserts, OAuth 2.0 token rotation, 5 Metabase dashboards.",
+      metric: "$3.5M reconciled",
+      tags: ["Node.js", "TypeScript", "Prisma", "PostgreSQL", "Metabase"],
       footerLink: []
     },
     {
       image: require("./assets/images/Personai.png"),
-      projectName: "PersonAI — iOS & Android",
+      projectName: "PersonAI \u2014 iOS & Android",
       projectDesc:
-        "Built and shipped PersonAI solo: a live AI productivity app on the App Store and Google Play with 2,500+ users at a 98% crash-free session rate. A multi-agent engine turns a messy brain-dump into a planned day. Owned the mobile app, the NestJS backend, subscriptions, and the release pipeline. Stack: React Native, Expo, NestJS, Prisma, RevenueCat, GitHub Actions + Expo EAS.",
+        "Built and shipped solo: a live AI productivity app on the App Store and Google Play. A multi-agent engine turns a messy brain-dump into a planned day.",
+      metric: "2,500+ users \u00b7 98% crash-free",
+      tags: ["React Native", "Expo", "NestJS", "Prisma", "RevenueCat"],
       footerLink: [
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/us/app/personai-to-do-list-planner/id6759544344"
-        },
-        {
-          name: "Google Play",
-          url: "https://play.google.com/store/apps/details?id=com.app.personai&hl=en"
-        }
+        {name: "App Store", url: "https://apps.apple.com/us/app/personai-to-do-list-planner/id6759544344"},
+        {name: "Google Play", url: "https://play.google.com/store/apps/details?id=com.app.personai&hl=en"}
       ]
     },
     {
       image: require("./assets/images/image.png"),
-      projectName: "Lightwork — AI RAG Platform",
+      projectName: "Lightwork \u2014 AI RAG Platform",
       projectDesc:
-        "AI-powered platform with a RAG pipeline, streaming chat, and voice agent built on LangChain, Pinecone, and VAPI. Fine-tuned GPT models with semantic search across a knowledge base. Stack: React, NestJS, OpenAI, LangChain, Pinecone.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://lightworkhq.ai/"
-        }
-      ]
+        "AI platform with a RAG pipeline, streaming chat, and a voice agent. Fine-tuned GPT models with semantic search across a knowledge base.",
+      tags: ["React", "NestJS", "OpenAI", "LangChain", "Pinecone", "VAPI"],
+      footerLink: [{name: "Visit Website", url: "https://lightworkhq.ai/"}]
     },
     {
-      image: require("./assets/images/paradiseEstate.png"),
-      projectName: "SN Solar — Bilingual Next.js Site",
+      coverIcon: "SN",
+      projectName: "SN Solar \u2014 Bilingual Next.js Site",
       projectDesc:
-        "Bilingual (English/Urdu RTL) Next.js 16 site. Lighthouse mobile performance: 75 → 92, 100/100 accessibility, best practices, and SEO. Sanity CMS, Server Actions, next-intl, 50-URL sitemap, JSON-LD structured data. Built and launched solo.",
-      footerLink: []
+        "Bilingual (English / Urdu RTL) marketing site built and launched solo. Sanity CMS, Server Actions, next-intl, a 50-URL sitemap, and JSON-LD structured data.",
+      metric: "Lighthouse 75 \u2192 92",
+      tags: ["Next.js 16", "Sanity", "next-intl", "SEO"],
+      footerLink: [{name: "Visit Website", url: "https://www.snsolarpk.com/"}]
     },
     {
       image: require("./assets/images/qadam.png"),
       projectName: "Qadam Store",
       projectDesc:
-        "Full-stack multivendor shoe marketplace with seller storefronts, JWT auth, JazzCash & COD payments, real-time Socket.IO buyer–seller chat, and a complete cart-to-checkout flow. Stack: React, Redux Toolkit, Node/Express, MongoDB.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://qadam-shoe-store-fe.vercel.app/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/leventCusine.png"),
-      projectName: "Levante Cuisine",
-      projectDesc:
-        "Multi-restaurant platform with real-time menus, secure payments, and optimized API response times.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://levantecuisine.co.uk/"
-        }
-      ]
+        "Full-stack multivendor shoe marketplace: seller storefronts, JWT auth, JazzCash & COD payments, real-time Socket.IO buyer\u2013seller chat, and a complete cart-to-checkout flow.",
+      tags: ["React", "Redux Toolkit", "Node", "Express", "MongoDB"],
+      footerLink: [{name: "Visit Website", url: "https://qadam-shoe-store-fe.vercel.app/"}]
     },
     {
       image: require("./assets/images/lalalaugh.png"),
       projectName: "La La Laugh",
       projectDesc:
-        "Landing page for a social entertainment app. On-page SEO implementation that ranked on the first page of Google search results.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://www.lalalaugh.com/"
-        }
-      ]
+        "Backend and admin for a short-form video platform, built solo. Weighted feed-ranking + Redis cache-aside, an event-driven AWS pipeline (S3\u2192Lambda\u2192MediaConvert\u2192CloudFront), 5 BullMQ queues, and Stripe billing.",
+      metric: "~1000ms \u2192 ~50ms feed",
+      tags: ["NestJS", "PostgreSQL", "Redis", "AWS", "BullMQ"],
+      footerLink: [{name: "Visit Website", url: "https://www.lalalaugh.com/"}]
+    },
+    {
+      image: require("./assets/images/leventCusine.png"),
+      projectName: "Levante Cuisine",
+      projectDesc:
+        "Multi-restaurant ordering platform with real-time menus, secure payments, and optimized API response times.",
+      tags: ["React", "Node.js", "MongoDB"],
+      footerLink: [{name: "Visit Website", url: "https://levantecuisine.co.uk/"}]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
