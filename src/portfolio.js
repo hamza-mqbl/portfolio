@@ -200,22 +200,13 @@ const bigProjects = {
   subtitle: "PRODUCTION SYSTEMS I'VE BUILT END-TO-END",
   projects: [
     {
-      coverIcon: "A+",
-      projectName: "Aliant+ Admin Platform",
+      image: require("./assets/images/lalalaugh.png"),
+      projectName: "La La Laugh",
       projectDesc:
-        "Owned the admin backbone and real-time chat for a global alliance of legal and accounting firms across 17+ countries. NestJS APIs behind a 42-rule OWASP gate on every deploy, Socket.IO messaging, and BullMQ/Redis workers.",
-      metric: "17+ modules",
-      tags: ["React", "TypeScript", "NestJS", "Socket.IO", "PostgreSQL"],
-      footerLink: []
-    },
-    {
-      coverIcon: "$",
-      projectName: "Jobber \u2192 PostgreSQL ETL Pipeline",
-      projectDesc:
-        "Replaced a fragile manual spreadsheet with an automated revenue engine that reconciles ~$3.5M to the cent, and surfaced a $292K reporting understatement the old process had hidden. Idempotent bulk upserts, OAuth 2.0 token rotation, 5 Metabase dashboards.",
-      metric: "$3.5M reconciled",
-      tags: ["Node.js", "TypeScript", "Prisma", "PostgreSQL", "Metabase"],
-      footerLink: []
+        "Backend and admin for a short-form video platform, built solo. Weighted feed-ranking + Redis cache-aside, an event-driven AWS pipeline (S3\u2192Lambda\u2192MediaConvert\u2192CloudFront), 5 BullMQ queues, and Stripe billing.",
+      metric: "~1000ms \u2192 ~50ms feed",
+      tags: ["NestJS", "PostgreSQL", "Redis", "AWS", "BullMQ"],
+      footerLink: [{name: "Visit Website", url: "https://www.lalalaugh.com/"}]
     },
     {
       image: require("./assets/images/Personai.png"),
@@ -230,12 +221,30 @@ const bigProjects = {
       ]
     },
     {
+      coverIcon: "$",
+      projectName: "Jobber \u2192 PostgreSQL ETL Pipeline",
+      projectDesc:
+        "Replaced a fragile manual spreadsheet with an automated revenue engine that reconciles ~$3.5M to the cent, and surfaced a $292K reporting understatement the old process had hidden. Idempotent bulk upserts, OAuth 2.0 token rotation, 5 Metabase dashboards.",
+      metric: "$3.5M reconciled",
+      tags: ["Node.js", "TypeScript", "Prisma", "PostgreSQL", "Metabase"],
+      footerLink: []
+    },
+    {
       image: require("./assets/images/image.png"),
       projectName: "Lightwork \u2014 AI RAG Platform",
       projectDesc:
         "AI platform with a RAG pipeline, streaming chat, and a voice agent. Fine-tuned GPT models with semantic search across a knowledge base.",
       tags: ["React", "NestJS", "OpenAI", "LangChain", "Pinecone", "VAPI"],
       footerLink: [{name: "Visit Website", url: "https://lightworkhq.ai/"}]
+    },
+    {
+      coverIcon: "A+",
+      projectName: "Aliant+ Admin Platform",
+      projectDesc:
+        "Owned the admin backbone and real-time chat for a global alliance of legal and accounting firms across 17+ countries. NestJS APIs behind a 42-rule OWASP gate on every deploy, Socket.IO messaging, and BullMQ/Redis workers.",
+      metric: "17+ modules",
+      tags: ["React", "TypeScript", "NestJS", "Socket.IO", "PostgreSQL"],
+      footerLink: []
     },
     {
       coverIcon: "SN",
@@ -253,15 +262,6 @@ const bigProjects = {
         "Full-stack multivendor shoe marketplace: seller storefronts, JWT auth, JazzCash & COD payments, real-time Socket.IO buyer\u2013seller chat, and a complete cart-to-checkout flow.",
       tags: ["React", "Redux Toolkit", "Node", "Express", "MongoDB"],
       footerLink: [{name: "Visit Website", url: "https://qadam-shoe-store-fe.vercel.app/"}]
-    },
-    {
-      image: require("./assets/images/lalalaugh.png"),
-      projectName: "La La Laugh",
-      projectDesc:
-        "Backend and admin for a short-form video platform, built solo. Weighted feed-ranking + Redis cache-aside, an event-driven AWS pipeline (S3\u2192Lambda\u2192MediaConvert\u2192CloudFront), 5 BullMQ queues, and Stripe billing.",
-      metric: "~1000ms \u2192 ~50ms feed",
-      tags: ["NestJS", "PostgreSQL", "Redis", "AWS", "BullMQ"],
-      footerLink: [{name: "Visit Website", url: "https://www.lalalaugh.com/"}]
     },
     {
       image: require("./assets/images/leventCusine.png"),
