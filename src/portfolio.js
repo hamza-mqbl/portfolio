@@ -170,9 +170,9 @@ const workExperiences = {
       date: "Mar 2025 – Present",
       desc: "Client and product work across web and mobile: enterprise admin platforms, data engineering, and AI-powered mobile apps.",
       descBullets: [
-        "Aliant+ — delivered 17+ admin modules for a global law/accounting firm alliance (17+ countries). NestJS APIs secured with Clerk JWT, 42-rule OWASP gate, Socket.IO real-time chat, BullMQ/Redis workers. Stack: React, TypeScript, TanStack Query, NestJS, Prisma, PostgreSQL.",
-        "Jobber ETL — hourly sync of ~10K records from Jobber's GraphQL API into PostgreSQL. Reconciled ~$3.5M of revenue to the cent. Idempotent bulk upserts, OAuth 2.0 rotating tokens, 5 Metabase dashboards. Stack: Node.js, TypeScript, Prisma, Railway.",
-        "PersonAI — live AI productivity app on iOS & Android. 98% crash-free session rate via GitHub Actions + Expo EAS CI/CD. Stack: React Native, Expo, NestJS, Prisma, RevenueCat."
+        "Built Aliant+'s admin backbone (17+ modules) and real-time chat for a global legal/accounting alliance across 17+ countries.",
+        "Shipped a Jobber \u2192 PostgreSQL ETL that reconciles ~$3.5M to the cent and caught a $292K reporting understatement.",
+        "Led PersonAI end to end \u2014 live on iOS & Android, 2,500+ users at a 98% crash-free session rate."
       ]
     },
     {
@@ -180,7 +180,12 @@ const workExperiences = {
       company: "Olumi Tech",
       companylogo: require("./assets/images/olumitech.jpeg"),
       date: "Jan 2024 – Feb 2025",
-      desc: "Integrated React frontends with Node/Express REST APIs, reduced load time 20% with code splitting and lazy loading. Designed REST APIs with robust error handling and built responsive, reusable UI components."
+      desc: "Full-stack web development on the MERN stack \u2014 React frontends on Node/Express APIs.",
+      descBullets: [
+        "Integrated React frontends with Node/Express REST APIs and cut initial load time ~20% with code splitting and lazy loading.",
+        "Designed REST APIs with robust error handling and input validation.",
+        "Built responsive, reusable UI components used across the product."
+      ]
     }
   ]
 };
